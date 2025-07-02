@@ -46,7 +46,7 @@ const LoginPopup = ({ setShowLogin }) => {
         if (response.data.isAdmin) {
           toast.success("Welcome, Admin!");
           setTimeout(() => {
-            window.location.href = "https://eloquent-narwhal-d22cb1.netlify.app/";
+            window.location.href = "https://food-del-admin-99g5.onrender.com/";
           }, 1500);
         } else {
           toast.success("Login successful!");
