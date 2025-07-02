@@ -1,0 +1,12 @@
+# ignore secrets
+.env
+
+# ignore dependencies
+node_modules/
+
+# ignore uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# logs (optional)
+*.log

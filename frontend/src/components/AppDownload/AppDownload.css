@@ -1,0 +1,83 @@
+.app-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #833104, #c3762348);
+    border-radius: 20px;
+    margin: 100px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Side (Admin Image) */
+.app-download-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin-img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Side (Text + Store Buttons) */
+.app-download-right {
+    flex: 2;
+    text-align: center;
+    color: white;
+}
+.pforbetter {
+    font-size: max(2.2vw, 22px);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.app-download-platforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.app-download-platforms img {
+    width: max(30vw, 150px);
+    max-width: 200px;
+    transition: 0.4s ease;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.app-download-platforms img:hover {
+    transform: scale(1.05);
+}
+
+/* Dark and Light Mode */
+:root .pforbetter {
+    color: white;
+}
+.lightcolors .pforbetter {
+    color: black;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .app-download {
+        flex-direction: column;
+        text-align: center;
+    }
+    .admin-img {
+        width: 120px;
+        height: 120px;
+    }
+    .pforbetter {
+        font-size: 20px;
+    }
+    .app-download-platforms img {
+        width: 70%;
+    }
+}
