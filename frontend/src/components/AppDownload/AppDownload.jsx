@@ -10,7 +10,7 @@ const AppDownload = () => {
       </div>
       <div className='app-download-right'>
         <p className='pforbetter'>
-          For Better Experience <br /> Download ProfitBin App
+          For Better Experience <br /> Download Tomato App
         </p>
         <div className="app-download-platforms">
           <img src={assets.play_store} alt="Play Store" />
